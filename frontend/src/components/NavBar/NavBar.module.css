@@ -144,4 +144,12 @@
     display: block;
     font-size: 1.4rem;
   }
+
+  .logo-text {
+    font-size: 1.4rem;
+  }
+
+  .logo-icon {
+    width: 2rem;
+  }
 }
