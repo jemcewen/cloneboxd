@@ -1,0 +1,140 @@
+.header {
+  width: 95%;
+  margin: auto;
+}
+
+.container {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 2.4rem;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.75rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #d8e0e8;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: white;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-search-text {
+  height: 1.875rem;
+  width: 8.75rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding: 0 2rem 0 1rem;
+  font-size: 0.8rem;
+  background-color: hsla(0, 0%, 100%, 0.25);
+  color: #89a;
+  transition: all 0.3s;
+}
+
+.nav-search-text:hover,
+.nav-search-text:focus {
+  background-color: white;
+}
+
+.nav-search-submit {
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-left: -2rem;
+  background: none;
+  border: none;
+  color: #d8e0e8;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 4.5rem;
+    max-height: 0;
+    overflow: hidden;
+    left: 0;
+    padding: 0 1rem;
+    width: 100%;
+    flex-direction: column;
+    background-color: #14181c;
+  }
+
+  .nav.clicked {
+    max-height: 300px;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid #9ab;
+    padding: 0.5rem 0;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .nav-icon {
+    display: block;
+  }
+
+  .nav-search {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.4rem;
+  }
+}
