@@ -1,14 +1,13 @@
-.header {
-  width: 95%;
-  margin: auto;
-}
-
 .container {
   height: 4.5rem;
+  width: 90%;
+  max-width: 950px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  position: relative;
 }
 
 .logo {
@@ -18,12 +17,12 @@
 }
 
 .logo-icon {
-  width: 2.4rem;
+  width: 2.25rem;
 }
 
 .logo-text {
   color: white;
-  font-size: 1.75rem;
+  font-size: 1.625rem;
 }
 
 .nav {
@@ -35,7 +34,7 @@
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.875rem;
 }
 
 .nav-link {
@@ -59,7 +58,7 @@
 
 .nav-search-text {
   height: 1.875rem;
-  width: 8.75rem;
+  width: 7.5rem;
   outline: none;
   border: none;
   border-radius: 1rem;

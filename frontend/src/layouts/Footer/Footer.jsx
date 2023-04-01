@@ -4,7 +4,7 @@ import tmdb from '../../assets/tmdb.svg';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <section className={styles.container}>
+      <div className={styles.container}>
         <img
           src={tmdb}
           className={styles['tmdb-logo']}
@@ -14,7 +14,7 @@ const Footer = () => {
           This product uses the TMDB API but is not
           <br /> endorsed or certified by TMDB.
         </p>
-      </section>
+      </div>
     </footer>
   );
 };
