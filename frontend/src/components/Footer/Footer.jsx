@@ -11,8 +11,8 @@ const Footer = () => {
           alt='the movie database'
         />
         <p className={styles.attribution}>
-          This product uses the TMDB API but is not endorsed or certified by
-          TMDB.
+          This product uses the TMDB API but is not
+          <br /> endorsed or certified by TMDB.
         </p>
       </section>
     </footer>
