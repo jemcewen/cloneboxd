@@ -1,0 +1,31 @@
+.container {
+  width: 90%;
+  max-width: 950px;
+  margin: auto;
+}
+
+.popular {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 0;
+  overflow: hidden;
+  gap: 0.625rem;
+}
+
+.poster {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 0.2rem;
+  border: 1px solid #2c3641;
+}
+
+.poster:hover {
+  border: 1px solid #00e054;
+}
+
+@media (max-width: 640px) {
+  .popular {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
